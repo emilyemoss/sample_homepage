@@ -26,3 +26,5 @@ end
 group :production do
   gem 'pg', '0.12.2'
 end
+
+gem 'rmagick', '2.13.1'

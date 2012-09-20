@@ -1,0 +1,397 @@
+
+@import "bootstrap";
+@import "bootstrap-responsive";
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url(http://fonts.googleapis.com/css?family=Puritan:400,700); 
+@import url(http://fonts.googleapis.com/css?family=Codystar|Dawning+of+a+New+Day);
+@import "font-awesome";
+
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+  	margin-bottom: 10px;
+  }
+}
+
+footer {
+	padding-bottom: 40px;
+}
+
+/* public landing page */
+
+
+a.date:hover {
+	text-decoration: none;	
+}
+a.date:link {
+	text-decoration: none;
+}
+a.date:visited {
+	text-decoration: none;
+}
+a.date:hover {
+	text-decoration: none;
+}
+
+a.date:active {
+	text-decoration: none;
+}
+
+
+.date {
+	margin: 3px 0;
+	padding: 5px 0 0 0;
+	color: grey;
+}
+
+.thumbnail {
+	div {
+		small {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			padding-top: 15px;
+			color: blue;
+		}
+		p {
+			margin: 15px 0;
+			padding: 15px 0;
+			color: red;
+		}
+	}
+}
+
+.thumbnails {
+	.row {
+		margin-left: 0;
+	}
+	
+}
+
+.nugget {
+	h3 {
+	font-family: 'Puritan', sans-serif;
+	margin-bottom: 20px;
+	line-height: 30px;
+	
+	}
+	img {
+	height: 200px;
+	}
+}
+
+/* video */
+
+.fluid-width-video-wrapper {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	margin: 0 0 25px 0;
+	iframe, img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
+}
+
+iframe {
+	padding: 10px 0;
+	font-family: 'Puritan', sans-serif;
+}
+
+.article-header {
+	font-family: 'Puritan', sans-serif;
+	color: orange;
+}
+
+/* footer */
+.footer-menu {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	font-family: 'Puritan', sans-serif;
+	ul {
+		list-style: none;
+	}
+	li {
+		display: inline;
+		padding: 10px;
+		font-size: 90%;
+	}
+	a {
+		color: orange;
+	}
+	a.facebook {
+		color: #3B5998;
+	}
+	a.twitter {
+		color: #00BAED;
+	}
+}
+
+#footerText {
+	padding: 30px 0;
+	margin: 20px 0;
+	font-family: 'Puritan', sans-serif;
+}
+
+.pull-center { 
+	text-align: center; 
+}
+
+.footer-test {
+	color: green;
+}
+
+.btn{
+	h3 {
+		font-family: 'Puritan', sans-serif;
+		padding: 0px 20px;
+		margin: 0px;
+	}
+}
+
+#bottomSlider {
+	background: white;
+	z-index: 100000;
+	position: fixed;
+	width: 285px;
+	height: 135px;
+	bottom: -1px;
+	border: 1px solid #555;
+	opacity: 1;
+	transition: right 0.5s ease-in, box-shadow 0.1s ease-in, opacity 0.75s ease
+}
+
+div.sidebar-poster {
+	width: 100%;
+	height: 600px;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	margin-bottom: 10px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#emily_image {
+	background-image: url('http://placehold.it/150x200');
+	background-width: 100%;
+}
+
+#emily_image:hover {
+	background-image: url('http://placehold.it/150x200/354675');
+}
+
+#ranjan_image {
+	background-image: url('http://placehold.it/150x200');
+}
+
+#ranjan_image:hover {
+	background-image: url('http://placehold.it/150x200/354675');
+}
+
+#gorby_image {
+	background-image: url('/assets/gorby.jpg');
+}
+
+#gorby_image:hover {
+	background-image: url('/assets/gorby_huh.jpg');
+}
+
+#pop_tart:hover {
+	text-decoration: none;
+	color: #FF99FF;
+}
+
+#pop_tart {
+	color: #FF47AD;
+}
+
+/* READ-LISTEN-WATCH */
+
+.image_test {
+	position: relative;
+	width: 100%; /* for IE 6 */
+	
+}
+
+.action_text {
+	position: absolute;
+	top: 20px;
+	right: 1px;	
+	opacity: 1.0;
+}
+
+.action_text span { 
+   color: white; 
+   text-align: right;
+   padding: 5px 10px;
+}
+
+.action_text span.spacer {
+	padding: 0 5px;
+}
+
+
+.text span {
+   background: rgba(236, 144, 0, 0.7);
+}
+
+.image span {
+   background: rgba(58, 149, 0, 0.7);
+}
+
+.video span {
+   background: rgba(58, 149, 237, 0.7);
+}
+
+.thumbnail {
+	padding: 0;
+}
+
+.follow {
+	padding: 0 3px 0 3px;
+	margin: 0;
+}
+
+
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+
+
+
+/*** STARRING Styles ***/
+
+a.not-starred:hover {
+	color: red;
+}
+
+a:hover > i.not-starred {
+	color: orange;
+	text-decoration: none;
+}
+
+a:hover > i.starred {
+	color: #AFAFAF;
+	text-decoration: none;
+}
+
+i.starred {
+	color: orange 
+}
+
+i.not-starred {
+	color: #AFAFAF
+}
+
+
+/*** VOTING Styles ***/
+
+.vote_count {
+	margin: 0;
+	padding: 0;
+}
+
+.voted_up {
+	a > i.vote_up, .vote_count {
+		color: green;
+		text-decoration: none;
+	}
+	a > i.vote_down {
+		color: grey;
+	}
+	a:hover > i.vote_down {
+		color: red;
+	}		
+}
+
+.voted_nil {
+	a, .vote_count {
+		color: grey;
+		text-decoration: none;
+	}
+}
+		
+.voted_down {
+	a {
+		text-decoration: none;
+	}
+	a > i.vote_up {
+		color: grey;
+	}
+	a > i.vote_down, .vote_count {
+		color: red;
+	}
+}
+
+.title {
+	h3 {
+	font-weight: normal;
+	}
+}
+
+
+
+/*** PRELAUNCH ***/
+
+.hero-unit-prelaunch {
+	font-family: 'Puritan', sans-serif; 
+	background: white; 
+	background-image: image_url("world_small_light.png");
+	background-repeat: no-repeat; 
+	background-position: right center;
+	h1 {
+		font-family: 'Dawning of a New Day', cursive;
+	}
+	h2 {
+		font-family: 'Puritan', sans-serif; 
+		color: orange; 
+		text-transform: uppercase;
+	}	
+}
+
+.logo-prelaunch {
+	background-image: image_url("ehip_new_250.png"); 
+	background-repeat: no-repeat; 
+	background-position: left center;
+}
