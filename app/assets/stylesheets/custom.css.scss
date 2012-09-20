@@ -333,9 +333,11 @@ i.not-starred {
 }
 
 .voted_up {
+	a {
+		text-decoration: none;
+	}
 	a > i.vote_up, .vote_count {
 		color: green;
-		text-decoration: none;
 	}
 	a > i.vote_down {
 		color: grey;
@@ -346,10 +348,19 @@ i.not-starred {
 }
 
 .voted_nil {
-	a, .vote_count {
-		color: grey;
+	a {
 		text-decoration: none;
 	}
+	a, .vote_count {
+		color: grey;
+	}
+	a:hover > i.vote_down {
+		color: red;
+	}
+	a:hover > i.vote_up {
+		color: green;
+	}
+	
 }
 		
 .voted_down {
@@ -362,6 +373,12 @@ i.not-starred {
 	a > i.vote_down, .vote_count {
 		color: red;
 	}
+	a:hover > i.vote_down {
+		color: grey;
+	}
+	a:hover > i.vote_up {
+		color: green;
+	}
 }
 
 .title {
@@ -369,7 +386,6 @@ i.not-starred {
 	font-weight: normal;
 	}
 }
-
 
 
 /*** PRELAUNCH ***/
